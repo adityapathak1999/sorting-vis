@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ 
+    <nav class="navbar-expand-lg navbar-dark bg-dark navbar">
+        <a class="navbar-brand" href="#">Sorting Visualizer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav spacing-nav">
+            <li class="nav-item dropdown spacing-nav">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Algorithms
+                </a>
+                <div class="dropdown-menu algos" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#"><button id="button-style" >Bubble</button></a>
+                      <a class="dropdown-item" href="#"><button id="button-style" >Selection</button></a>
+                      <a class="dropdown-item" href="#"><button id="button-style">Insertion</button></a>
+                      <a class="dropdown-item" href="#"> <button id="button-style" >Merge</button></a>
+                      <a class="dropdown-item" href="#"><button id="button-style">Quick</button></a>
+                      <a class="dropdown-item" href="#"><button id="button-style">Heap</button></a>
+                </div>
+             </li>
+             <li class="nav-item active spacing-nav">
+                <a class="nav-link" href="#"><button id="a_generate" class="generate-new-button">Generate New Array!</button></a>
+                </li>
+                <li class="nav-item spacing-nav">
+                    <div class="nav-link active">Size</div>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=80>
+                </li>
+                <li class="nav-item spacing-nav">
+                <a class="nav-link active" href="#">Speed</a>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+                </li>
+          </ul>
+        </div>
+      </nav>
+      <!--VBSDVBSDJIBSDJBJSDBJVBSDJBVJSDBJVBSDJBVJSDJVSJVJSBJVBSDBVJBJVBJBGJDJGJSBJSJBJBJVJBJBJGJKSNJBVJNVASJKGJURNAUSJNUJBAKNAKNVI-->
+
+    <section>
+
+        <div id="Info_Cont1">
+         
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="Info_Cont2">
+         
+        </div>
+
+    </section>
+      <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+$('.navbar-nav>li>div>a').on('click', function(){
+  $('.navbar-collapse').collapse('hide');
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
